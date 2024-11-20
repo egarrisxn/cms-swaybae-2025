@@ -8,8 +8,8 @@ export default defineConfig({
   name: 'default',
   title: 'swaybae-sanity',
 
-  projectId: projectId || '',
-  dataset: dataset || '',
+  projectId: projectId || '0mlp51cg',
+  dataset: dataset || 'production',
 
   plugins: [structureTool(), visionTool()],
 

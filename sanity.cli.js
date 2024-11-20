@@ -1,13 +1,11 @@
 import {defineCliConfig} from 'sanity/cli'
+import {projectId, dataset} from './lib/api.js'
 
 export default defineCliConfig({
   api: {
-    projectId: '0mlp51cg',
-    dataset: 'production'
+    projectId: projectId || '0mlp51cg',
+    dataset: dataset || 'production',
   },
-  /**
-   * Enable auto-updates for studios.
-   * Learn more at https://www.sanity.io/docs/cli#auto-updates
-   */
+  studioHost: 'swaybae-2025',
   autoUpdates: true,
 })

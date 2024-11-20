@@ -12,32 +12,38 @@ importers:
         specifier: ^3.64.2
         version: 3.64.2(@babel/runtime@7.26.0)(@codemirror/lint@6.8.2)(@codemirror/theme-one-dark@6.1.2)(@lezer/common@1.2.3)(codemirror@6.0.1(@lezer/common@1.2.3))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       sanity:
         specifier: ^3.64.2
         version: 3.64.2(@types/node@22.9.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       styled-components:
-        specifier: ^6.1.8
+        specifier: ^6.1.13
         version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
+      '@babel/preset-env':
+        specifier: ^7.26.0
+        version: 7.26.0(@babel/core@7.26.0)
       '@sanity/eslint-config-studio':
         specifier: ^4.0.0
         version: 4.0.0(eslint@8.57.1)(typescript@5.6.3)
       '@types/react':
-        specifier: ^18.0.25
+        specifier: ^18.3.12
         version: 18.3.12
       eslint:
-        specifier: ^8.6.0
+        specifier: ^8.57.0
         version: 8.57.1
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@8.57.1)
       prettier:
-        specifier: ^3.0.2
+        specifier: ^3.3.3
         version: 3.3.3
       typescript:
-        specifier: ^5.1.6
+        specifier: ^5.6.3
         version: 5.6.3
 
 packages:
@@ -2147,6 +2153,12 @@ packages:
   escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+
+  eslint-config-prettier@9.1.0:
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
 
   eslint-plugin-jsx-a11y@6.10.2:
     resolution: {integrity: sha512-scB3nz4WmG75pV8+3eRUQOHZlNSUhFNq37xnpgRkCCELU3XMvXAxLk1eqWWyE22Ki4Q01Fnsw9BA3cJHDPgn2Q==}
@@ -6977,6 +6989,10 @@ snapshots:
   escape-string-regexp@1.0.5: {}
 
   escape-string-regexp@4.0.0: {}
+
+  eslint-config-prettier@9.1.0(eslint@8.57.1):
+    dependencies:
+      eslint: 8.57.1
 
   eslint-plugin-jsx-a11y@6.10.2(eslint@8.57.1):
     dependencies:
