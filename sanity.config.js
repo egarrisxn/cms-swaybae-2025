@@ -23,7 +23,7 @@ function resolveHref(documentType, slug) {
     case 'page':
       return slug ? `/${slug}` : undefined
     case 'post':
-      return slug ? `/blog/${slug}` : undefined
+      return slug ? `/posts/${slug}` : undefined
     default:
       console.warn('Invalid document type:', documentType)
       return undefined
@@ -55,7 +55,7 @@ export default defineConfig({
             filter: `_type == "page" && slug.current == $slug`,
           },
           {
-            route: '/blog/:slug',
+            route: '/posts/:slug',
             filter: `_type == "post" && slug.current == $slug`,
           },
         ]),
