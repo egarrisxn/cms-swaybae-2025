@@ -11,7 +11,7 @@ const projectId = process.env.SANITY_STUDIO_PROJECT_ID || '0mlp51cg'
 const dataset = process.env.SANITY_STUDIO_DATASET || 'production'
 const apiVersion = process.env.SANITY_STUDIO_API_VERSION || '2024-11-20'
 const studioUrl = process.env.SANITY_STUDIO_URL || 'http://localhost:3333'
-const previewUrl = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000'
+const previewUrl = process.env.SANITY_STUDIO_PREV_URL || 'http://localhost:3000'
 
 const homeLocation = {
   title: 'Home',
