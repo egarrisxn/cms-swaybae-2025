@@ -1,10 +1,13 @@
 import {defineCliConfig} from 'sanity/cli'
-import {projectId, dataset} from './lib/api.js'
+
+export const projectId = process.env.SANITY_STUDIO_PROJECT_ID || '0mlp51cg'
+
+export const dataset = process.env.SANITY_STUDIO_DATASET || 'production'
 
 export default defineCliConfig({
   api: {
-    projectId: projectId || '0mlp51cg',
-    dataset: dataset || 'production',
+    projectId,
+    dataset,
   },
   studioHost: 'swaybae-2025',
   autoUpdates: true,
